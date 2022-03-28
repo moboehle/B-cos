@@ -19,8 +19,7 @@ class Trainer:
                  pre_process_batch_f=default_batch_pre_f, eval_batch_f=tuple([default_eval_batch]),
                  ddp_rank=None, verbose=True, to_probabilities=torch.sigmoid, **options):
         """
-        General Trainer with functions like run_epoch, evaluations, single step etc., but also a CoDA-adapted
-        `attribute' method. If the model is not a CoDA-network, this will compute input times gradient.
+        General Trainer with functions like run_epoch, evaluations, single step etc.
         Args:
             model: PyTorch neural network model
             data_handler: Data object from data.utils.datasets to store test and train loaders etc.
@@ -435,10 +434,10 @@ class Trainer:
 
     def explanation_mode(self, active=True):
         """
-        (De-)activates the explanation mode for all CoDA layers.
+        (De-)activates the explanation mode for all dynamic linear layers.
         If detaching is active, computing the gradient of the output w.r.t. the image yields the linear matrix.
         Args:
-            active (bool): If True, the weight computations are detached from the graph for CoDA layers.
+            active (bool): If True, the weight computations are detached from the graph for dynamic linear layers.
 
         Returns: None
 
@@ -448,8 +447,8 @@ class Trainer:
     def attribute(self, image, target, **kwargs):
         """
         This method returns the contribution map according to Input x Gradient.
-        Specifically, if the prediction model is a CoDA-Network, it returns the contribution map according
-        to the linear mapping.
+        Specifically, if the prediction model is a dynamic linear network, it returns the contribution map according
+        to the linear mapping (IxG with detached dynamic weights).
         Args:
             image: Input image.
             target: Target class to check contributions for.
@@ -467,10 +466,8 @@ class Trainer:
     @torch.no_grad()
     def attribute_selection(self, image, targets, **kwargs):
         """
-        Runs trainer.attribute for the list of targets, which
-            returns the contribution map according to Input x Gradient.
-            Specifically, if the prediction model is a CoDA-Network, it returns the contribution map according
-            to the linear mapping.
+        Runs trainer.attribute for the list of targets.
+
 
         Args:
             image: Input image.
