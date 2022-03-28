@@ -1,0 +1,71 @@
+#header_wrap {background: #002448 !important;}
+#project_subtitle { margin: auto; color: #fff; font-size: 24px; font-weight: 700; text-shadow: #111 0px 0px 10px;
+ background: none; display: block; text-align:center}
+#project_title { margin: auto; color: #fff; font-size: 32px; font-weight: 700; text-shadow: #111 0px 0px 10px;text-align:center}
+.inner { position: relative; max-width: 60%; padding: 20px 10px; margin: 0 auto; }
+#main_content.inner {
+max-width: 40%;
+}
+#main_content p {
+font-size: 18px;
+text-align: justify
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.zoom {
+  padding: 30px 0px;
+  transition: transform .5s; /* Animation */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  displaystyle: block
+}
+img.zoom2 {
+  padding: 20px 10px;
+  transition: transform .5s; /* Animation */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  displaystyle: block
+}
+img.zoom:hover {
+  transform: scale(1.35);
+
+}
+
+img.intro_gifs {
+    width:160px;
+    height: auto;
+    vertical-align:middle;
+    display:inline;
+    margin:0;
+    padding:0;
+
+}
+
+#project_tagline {  margin: auto; color: #fff; font-size: 24px; font-weight: 300; background: none; text-shadow: #111 0px 0px 10px;
+display: block; text-align:center}
+#authors { margin: auto; color: #fff; font-size: 24px; font-weight: 300;  text-shadow: #111 0px 0px 10px;text-align:center}
+
+#forkme_banner {
+background: url(../images/blacktocat.png) #0090ff00 no-repeat 95% 50%
+}
+h1 { font-size: 36px; font-weight: 700; }
+
+h2 { padding-bottom: 10px; font-size: 24px; background: url("../images/bg_hr.png") repeat-x bottom; }
+
+h3 { font-size: 21px; }
+
+h4 { font-size: 18px; }
+
+h5 { font-size: 16px; }
+
+h6 { font-size: 14px; }
+footer.inner {text-align:center
+}

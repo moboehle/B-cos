@@ -1,0 +1,8 @@
+title: B-cos Networks
+subtitle: Alignment is All We Need for Interpretability
+authors: Moritz Böhle, Mario Fritz, Bernt Schiele
+description: >- # this means to ignore newlines until "baseurl:"
+  CVPR 2022
+
+# Build settings
+theme: jekyll-theme-slate
