@@ -5,7 +5,7 @@
 </div>
 # Introduction
 [PrePrint](https://tinyurl.com/alignment-is-all-we-need)  |  [B-cos Nets on GitHub](https://github.com/moboehle/B-cos) 
-| [CoDA Nets on YouTube (Computer Vision Seminar, MIT)](https://youtu.be/0NSSzXoWa2c) 
+| [B-cos Nets on YouTube (Computer Vision Seminar, MIT)](https://youtu.be/0NSSzXoWa2c) 
 
 
 Today's deep neural network architectures achieve impressive performances on a wide array of different tasks.
