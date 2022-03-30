@@ -21,9 +21,7 @@ class BcosConv2d(nn.Module):
     def __init__(self, inc, outc, kernel_size=1, stride=1, padding=0, max_out=2, b=2,
                  scale=None, scale_fact=100, **kwargs):
         super().__init__()
-        for key in kwargs.keys():
-            print(f"Unknown keyword argument {key}, clean up..")
-
+        
         ks = kernel_size
         self.stride = stride
         self.linear = NormedConv2d(inc, outc * max_out, ks, stride, padding, 1, 1, bias=False)
