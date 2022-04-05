@@ -1,5 +1,4 @@
 # Convolutional Dynamic Alignment Networks for Interpretable Classifications
-Official implementation of the CVPR 2022 paper: [PrePrint](https://tinyurl.com/alignment-is-all-we-need) | [GitHub Pages](https://moboehle.github.io/B-cos/) 
 
 M. Böhle, M. Fritz, B. Schiele. **B-cos Networks: Alignment is All we Need for Interpretability**. CVPR, 2022.
 <div style="displaystyle=block;align=center;"><p align="center" >
