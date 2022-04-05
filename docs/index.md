@@ -4,7 +4,7 @@
   <img class="intro_gifs"  src="media/gifs/zebra.gif?raw=true"/>
 </div>
 # Introduction
-[PrePrint](https://tinyurl.com/alignment-is-all-we-need)  |  [B-cos Nets on GitHub](https://github.com/moboehle/B-cos) 
+ [B-cos Nets on GitHub](https://github.com/moboehle/B-cos) 
 | [B-cos Nets on YouTube (Computer Vision Seminar, MIT)](https://youtu.be/0NSSzXoWa2c) 
 
 
