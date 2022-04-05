@@ -52,10 +52,10 @@ This code is licensed under the BSD License 2.0, see [license](LICENSE).
 
 Further, you use any of the code in this repository for your research, please cite as:
 ```
-  @article{Boehle2022CVPR,
+  @inproceedings{Boehle2022CVPR,
           author    = {Moritz Böhle and Mario Fritz and Bernt Schiele},
           title     = {B-cos Networks: Alignment is All we Need for Interpretability},
-          journal   = {2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition ({CVPR})},
+          journal   = {IEEE/CVF Conference on Computer Vision and Pattern Recognition ({CVPR})},
           year      = {2022}
       }
 ```
