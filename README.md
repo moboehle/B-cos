@@ -1,4 +1,4 @@
-# Convolutional Dynamic Alignment Networks for Interpretable Classifications
+# B-cos Networks: Alignment is All We Need for Interpretability
 
 M. Böhle, M. Fritz, B. Schiele. **B-cos Networks: Alignment is All we Need for Interpretability**. CVPR, 2022.
 <div style="displaystyle=block;align=center;"><p align="center" >
