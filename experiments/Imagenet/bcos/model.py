@@ -79,7 +79,7 @@ def get_optimizer(model, base_lr):
     optimisers = {"Adam": torch.optim.Adam,
                   "AdamW": torch.optim.AdamW,
                   "SGD": torch.optim.SGD}
-    the_model = model if not isinstance(model, DistributedDataParallel) else model.module
+    the_model = model if not isinstance(model, (nn.DataParallel, DistributedDataParallel)) else model.module
     opt = optimisers[the_model.opti]
     opti_opts = the_model.opti_opts
     opti_opts.update({"lr": base_lr})
