@@ -60,11 +60,11 @@ def get_optimizer(model, base_lr):
     optimisers = {"Adam": torch.optim.Adam,
                   "AdamW": torch.optim.AdamW,
                   "SGD": torch.optim.SGD}
-    opt = optimisers[model.opti]
-    opti_opts = model.opti_opts
+    the_model = model if not isinstance(model, (nn.DataParallel, DistributedDataParallel)) else model.module
+    opt = optimisers[the_model.opti]
+    opti_opts = the_model.opti_opts
     opti_opts.update({"lr": base_lr})
-
-    opt = opt(model.parameters(), **opti_opts)
+    opt = opt(the_model.parameters(), **opti_opts)
     opt.base_lr = base_lr
     return opt
 
