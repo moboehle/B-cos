@@ -156,10 +156,12 @@ class LocalisationAnalyser(Analyser):
         for count in range(sample_size):
             multi_img, tgts, offset = self.make_multi_image(n_imgs, loader, offset=offset,
                                                             fixed_indices=fixed_indices)
-            # calculate the attributions for all classes that are participating and only save positive contribs
-            attributions = explainer.attribute_selection(multi_img, tgts).sum(1, keepdim=True).clamp(0)
+            # calculate the attributions for all classes that are participating
+            attributions = explainer.attribute_selection(multi_img, tgts).sum(1, keepdim=True)
             if smooth:
                 attributions = F.avg_pool2d(attributions, smooth, stride=1, padding=(smooth - 1) // 2)
+            # Only compare positive attributions
+            attributions = attributions.clamp(0)
             # Calculate the relative amount of attributions per region. Use avg_pool for simplicity.
             with torch.no_grad():
                 contribs = F.avg_pool2d(attributions, single_shape, stride=single_shape).permute(0, 1, 3, 2).reshape(
