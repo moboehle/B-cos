@@ -1,3 +1,6 @@
+**For an updated version of the B-cos Networks, please also check out [github.com/B-cos/B-cos-v2](https://github.com/B-cos/B-cos-v2)**
+
+
 # B-cos Networks: Alignment is All We Need for Interpretability
 
 M. Böhle, M. Fritz, B. Schiele. **B-cos Networks: Alignment is All we Need for Interpretability**. CVPR, 2022.
