@@ -3,7 +3,7 @@
 
 # B-cos Networks: Alignment is All We Need for Interpretability
 
-M. Böhle, M. Fritz, B. Schiele. **B-cos Networks: Alignment is All we Need for Interpretability**. CVPR, 2022.
+M. Böhle, M. Fritz, B. Schiele. **B-cos Networks: Alignment is All we Need for Interpretability**. CVPR, 2022 ([paper link](https://openaccess.thecvf.com/content/CVPR2022/html/Bohle_B-Cos_Networks_Alignment_Is_All_We_Need_for_Interpretability_CVPR_2022_paper.html)). 
 <div style="displaystyle=block;align=center;"><p align="center" >
   <img src="docs/media/example_figure.png"/>
   </p>
